@@ -1,0 +1,42 @@
+﻿@model MIS4200Kuczek.Models.Enrolls
+
+@{
+    ViewBag.Title = "Enrolls Details";
+}
+
+<h2>Enrolls Details</h2>
+
+<div>
+    <h4>Enrolls</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.course.courseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.course.courseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.student.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.student.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.letterGrade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.letterGrade)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.enrollsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

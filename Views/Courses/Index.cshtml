@@ -1,0 +1,67 @@
+﻿@model IEnumerable<MIS4200Kuczek.Models.Course>
+
+@{
+    ViewBag.Title = "Course Index";
+}
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {background-color: #f2f2f2}
+        
+        tr:hover {background-color: #dbd9d5;}
+    </style>
+</head>
+
+<h2>Course Roster</h2>
+
+<p>
+    <a href="~/Courses/Create" class="btn btn-primary">Create New</a>
+     @*@Html.ActionLink("Create New", "Create")*@
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.instructor.firstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.courseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.courseDescription)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.instructor.firstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.courseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.courseDescription)
+        </td>
+        <td>
+            <i class="glyphicon glyphicon-edit"></i>
+            @Html.ActionLink("Edit", "Edit", new { id = item.courseID }) |
+            <i class="glyphicon glyphicon-list"></i>
+            @Html.ActionLink("Details", "Details", new { id = item.courseID }) |
+            <i class="glyphicon glyphicon-trash"></i>
+            @Html.ActionLink("Delete", "Delete", new { id = item.courseID })
+        </td>
+    </tr>
+}
+
+</table>

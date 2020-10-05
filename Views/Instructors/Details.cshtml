@@ -1,0 +1,50 @@
+﻿@model MIS4200Kuczek.Models.Instructor
+
+@{
+    ViewBag.Title = "Instructor Details";
+}
+
+<h2>Instructor Details</h2>
+
+<div>
+    <h4>Instructor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.officePhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.officePhoneNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.instructorID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>MIS4200</h1>
+    <p class="lead">Welcome to MIS4200</p>
+    <p><a href="https://business.ohio.edu/academics/undergrad-majors/management-information-systems/undergraduate-degree/" class="btn btn-primary btn-lg">Learn more about MIS 4200 &raquo;</a></p>
+    <span class="container">
+        @*<span class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                Dropdown Example
+                <span class="caret"></span>
+            </button>
+            <ul class="dropwdown-menu">
+                <li><a href="Instructors">Instructors</a></li>
+                <li><a href="Students">Students</a></li>
+                <li><a href="Enrolls">Enrolls</a></li>
+                <li><a href="Courses">Courses</a></li>
+            </ul>
+        </span>*@
+</div>
+<div class="well">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>College Major/Certificate</h2>
+            <p>
+                I am majoring in Management Information Systems and Business Analytics with a certificate in Sales. Management information systems is a process of using data to form an analysis in order to make business decisions which then can be visualized. Business analytics is ability to analyze past business performance data and transform it into valuable business insight to create future business proficiency and success.
+            </p>
+            <p><a class="btn btn-default" href="https://business.ohio.edu/academics/undergrad-majors/management-information-systems/undergraduate-degree/">Learn more about the MIS major &raquo;</a></p>
+            <p><a class="btn btn-default" href="https://business.ohio.edu/academics/undergrad-majors/business-analytics/">Learn more about the Business Analytics major &raquo;</a></p>
+            @Html.ActionLink("Students", "Index", "Students")<br />
+            @Html.ActionLink("Enrolls", "Index", "Enrolls")<br />
+            @Html.ActionLink("Courses", "Index", "Courses")<br />
+            @Html.ActionLink("Instructors", "Index", "Instructors")
+        </div>
+        <div class="col-md-4">
+            <h2>Involvement at Ohio University</h2>
+            <p>
+                I joined Sigma Kappa Sorority the fall semester of my freshman year. I always wanted to be in a sorority because of the long-lasting friendships and leadership opportunities. Spring semester of my Sophomore year I applied and accepting the role as Executive Vice President where I was responsible for promoting an atmosphere of high moral character and holding members accountable to chapter standards and values. Spring semester of my freshman year I applied and joined the Schey Sales Centre. I wanted to be in the Schey because I knew when applying for jobs in the future, I would have to sell myself and saw the Schey as a great opportunity to learn the skills on how to do so. The same semester I joined the Schey I applied and accepted the role as an Account Manager where I was a liaison between Schey students and corporate partners. I sent weekly emails to corporate partners, held monthly conference calls with corporate partners, and assisted corporate partners while on campus. Spring semester my sophomore year I applied and accepted the role as Director of Partner Relations where I oversaw the team of 15 Account Managers. Spring semester of my junior year I decided to apply and accept the role as Executive Vice President for the Women's Panhellenic Association. I really enjoyed my role as Executive Vice President for my own sorority so I felt that this would be rewarding experience. My duties include creating and overseeing the Panhellenic Judicial Board, updating Panhellenic bylaws, and enforcing all risk management policies and procedures outlined in the individual chapter, university, and national handbooks. Fall semester and spring semester of my sophomore year I was a teacher’s assistant for Quantitative Business Analytics 1720 where completed all homework assignments to ensure quality, I meet with students who needed homework help, and processed assignments and exams through grading system. Fall semester of my senior year (current semester) I am a teacher’s assistant for MIS 3800 where I complete all SAP labs and help students when in need of help on assignments. Spring semester of my junior year I applied and accepted the role as a Student Telerecruiter where I take to perspective Ohio University student on university programs, extracurriculars, and campus life.
+            </p>
+            <p><a class="btn btn-default" href="https://business.ohio.edu/sales">Learn more about The Schey Sales Centre &raquo;</a></p>
+            <p><a class="btn btn-default" href="http://ohio.sigmakappa.org/">Learn more about Sigma Kappa Sorority &raquo;</a></p>
+            <p><a class="btn btn-default" href="https://ouwpapublicrelatio.wixsite.com/ohiopanhellenic">Learn more about the Women's Panhellenic Association  &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Post-Graduation Plans</h2>
+            <p>This past summer (2020) I had the opportunity to intern with PwC specializing in Risk Assurance. This internship program expanded my horizons of digital upskilling through areas of data wrangling, data visualization, storytelling with data, and project management. I am looking forward to working full-time as a Risk Assurance Associate post-graduation.</p>
+            <p><a class="btn btn-default" href="https://www.pwc.com/">Learn more about PwC &raquo;</a></p>
+        </div>
+    </div>
+    </div>
